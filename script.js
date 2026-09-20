@@ -11,7 +11,7 @@ const CONFIG = {
     "Siempre me encanta verte sonreir"
   ],
   finalMessage: "No importa cuántas estrellas existan, tu eres la lucecita que me llena el corazon.",
-  musicPath: "assets/music.mp3"
+  musicPath: "music.mp3"
 };
 
 const STAR_POSITIONS = [
