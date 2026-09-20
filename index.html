@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070b25" />
+    <meta
+      name="description"
+      content="Una sorpresa romántica escrita entre las estrellas."
+    />
+    <title>Una constelación hecha para ti</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <div class="ambient-stars" id="ambient-stars" aria-hidden="true"></div>
+      <div class="nebula nebula--one" aria-hidden="true"></div>
+      <div class="nebula nebula--two" aria-hidden="true"></div>
+
+      <main>
+        <section class="stage stage--invitation" id="invitation-stage" aria-labelledby="invitation-title">
+          <article class="invitation-card">
+            <span class="eyebrow" aria-hidden="true">✦ &nbsp; UN MENSAJE ESPECIAL &nbsp; ✦</span>
+            <div class="mini-orbit" aria-hidden="true">
+              <span class="mini-orbit__star">★</span>
+            </div>
+            <p class="recipient-label">Para</p>
+            <h1 id="invitation-title"></h1>
+            <p class="invitation-copy" id="invitation-copy"></p>
+            <button class="primary-button" id="start-button" type="button">
+              <span>Ver mi sorpresa</span>
+              <span class="button-star" aria-hidden="true">✦</span>
+            </button>
+          </article>
+        </section>
+
+        <section class="stage stage--sky" id="sky-stage" aria-labelledby="sky-title" hidden>
+          <header class="sky-header">
+            <div>
+              <p class="sky-kicker">MIRA HACIA EL CIELO</p>
+              <h2 id="sky-title">Encuentra las estrellas que brillan para ti</h2>
+            </div>
+            <button class="sound-button" id="sound-button" type="button" hidden aria-label="Reproducir música">
+              <span class="sound-icon" aria-hidden="true">♪</span>
+              <span id="sound-label">Música</span>
+            </button>
+          </header>
+
+          <div class="progress-wrap" aria-live="polite">
+            <div class="progress-copy">
+              <span id="progress-text">0 de 5 estrellas</span>
+              <span id="progress-hint">Toca una estrella dorada</span>
+            </div>
+            <div class="progress-track" aria-hidden="true">
+              <span id="progress-fill"></span>
+            </div>
+          </div>
+
+          <div class="sky-canvas" id="sky-canvas">
+            <svg class="constellation" id="constellation" viewBox="0 0 1000 620" aria-hidden="true">
+              <g id="segment-layer"></g>
+              <path
+                id="heart-path"
+                class="heart-path"
+                d="M500 525 C455 485 220 350 220 190 C220 75 365 42 500 175 C635 42 780 75 780 190 C780 350 545 485 500 525 Z"
+              />
+            </svg>
+
+            <div class="guide-stars" id="guide-stars"></div>
+
+            <div class="phrase-card" id="phrase-card" role="status" aria-live="polite">
+              <span aria-hidden="true">✦</span>
+              <p id="phrase-text"></p>
+            </div>
+
+            <div class="finale" id="finale" aria-live="polite" aria-hidden="true" hidden>
+              <p class="finale-kicker">NUESTRA CONSTELACIÓN</p>
+              <div class="initials" id="initials"></div>
+              <p class="final-message" id="final-message"></p>
+              <button class="replay-button" id="replay-button" type="button">
+                <span aria-hidden="true">↻</span> Volver a mirar
+              </button>
+            </div>
+
+            <div class="shooting-stars" id="shooting-stars" aria-hidden="true"></div>
+          </div>
+        </section>
+      </main>
+
+      <p class="credit" aria-hidden="true">HECHO CON <span>♥</span> Y UN POCO DE POLVO DE ESTRELLAS</p>
+      <audio id="background-music" loop preload="metadata"></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
