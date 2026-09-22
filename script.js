@@ -1,12 +1,12 @@
 const CONFIG = {
-  recipientName: "Para la persona mas enojana y hermosa del mundo",
+  recipientName: "Para la persona mas enojona y hermosa del mundo",
   senderInitial: "Ricardo",
   recipientInitial: "Angy",
   invitation: "Perdon por tardar tanto",
   starMessages: [
     "Aunque a veces hago malas bromas",
     "Me encanta pasar el tiempo contigo",
-    "Me encantas y adoro pasar el timepo riendome contigo",
+    "Me encantas y adoro pasar el tiempo riendome contigo",
     "Gracias por existir",
     "Siempre me encanta verte sonreir"
   ],
